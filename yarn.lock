@@ -3918,6 +3918,11 @@ tr46@^2.0.2:
   dependencies:
     punycode "^2.1.1"
 
+ts-boilerplate-niksolaz@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ts-boilerplate-niksolaz/-/ts-boilerplate-niksolaz-1.0.0.tgz#0de07bc215019dc51d8373368c9dddc4a3a2e166"
+  integrity sha512-UN5Sdu7KndMdv/3HDuJmX5SNh72wI5jq8SU8FigSUqg0zLfAKRWuUksTps1KH7xZxMFEVXYvvMMWED3eD4NlKg==
+
 ts-jest@26.5.5:
   version "26.5.5"
   resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-26.5.5.tgz#e40481b6ee4dd162626ba481a2be05fa57160ea5"
