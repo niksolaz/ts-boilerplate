@@ -1,10 +1,20 @@
 {
-  "name": "my-project",
+  "name": "ts-boilerplate",
   "version": "1.0.0",
   "main": "main.js",
-  "author": "Nicola Solazzo",
+  "description": "Boilerplate for TypeScript projects (Node.js and browser modules)",
+  "repository": "https://github.com/niksolaz/ts-boilerplate",
+  "author": "Nicola Solazzo <solazzo.nicola@gmail.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "cli": "ts-node src/cli.ts",
+    "test": "jest",
+    "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist build",
+    "ts-node": "ts-node"
+  },
   "devDependencies": {
     "@types/jest": "26.0.23",
     "@types/node": "15.0.1",
