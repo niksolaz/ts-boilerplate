@@ -1,6 +1,6 @@
 {
-  "name": "ts-boilerplate",
-  "version": "1.1.1",
+  "name": "ts-boilerplate-niksolaz",
+  "version": "1.0.0",
   "description": "Boilerplate for TypeScript projects (Node.js and browser modules)",
   "repository": "https://github.com/niksolaz/ts-boilerplate",
   "author": "Nicola Solazzo <solazzo.nicola@gmail.com>",
