@@ -1,12 +1,27 @@
 {
   "name": "ts-boilerplate",
-  "version": "1.0.0",
-  "main": "main.js",
+  "version": "1.1.1",
   "description": "Boilerplate for TypeScript projects (Node.js and browser modules)",
   "repository": "https://github.com/niksolaz/ts-boilerplate",
   "author": "Nicola Solazzo <solazzo.nicola@gmail.com>",
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "typescript",
+    "boilerplate",
+    "esbuild"
+  ],
+  "main": "./dist/tsc/main.js",
+  "types": "./dist/tsc/main.d.ts",
+  "browser": "./dist/esbuild/browser.js",
+  "bin": {
+    "my-cli-tool": "./dist/esbuild/cli.js"
+  },
+  "files": [
+    "dist",
+    "CHANGELOG.md",
+    "README.md"
+  ],
   "scripts": {
     "cli": "ts-node src/cli.ts",
     "test": "jest",
@@ -20,6 +35,7 @@
     "@types/node": "15.0.1",
     "@typescript-eslint/eslint-plugin": "4.22.0",
     "@typescript-eslint/parser": "4.22.0",
+    "esbuild": "0.11.17",
     "eslint": "7.25.0",
     "jest": "26.6.3",
     "ts-jest": "26.5.5",
