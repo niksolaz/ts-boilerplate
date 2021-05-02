@@ -3,18 +3,20 @@ name: Lint and test
 on: [push, pull_request]
 
 jobs:
-  default-version:
-    runs-on: ${{ matrix.os }}
+  lint_and_test:
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-latest, windows-latest, ubuntu-latest]
+        nodejs: [10, 12, 14]
 
     steps:
     - uses: actions/checkout@v2
+
+    # https://github.com/actions/setup-node
     - uses: actions/setup-node@v2-beta
       with:
-        node-version: 12
+        node-version: ${{ matrix.nodejs }}
 
     - run: yarn install
     - run: yarn test
